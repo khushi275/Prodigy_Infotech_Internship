@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #67a9f2, #304352);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .stopwatch-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .time-display {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f8f8f8;
+    margin-bottom: 30px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #67a9f2, #304352);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #4a5d6d;
+    transform: scale(1.05);
+  }
+  
+  .btn:disabled {
+    background: #777;
+    cursor: not-allowed;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .stopwatch-container {
+      padding: 25px;
+      max-width: 300px;
+    }
+  
+    .time-display {
+      font-size: 2.5rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  }
+  
